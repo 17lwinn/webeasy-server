@@ -1,0 +1,22 @@
+                        ProTech WebEasy Server
+                        
+What is it exactly?
+-------------------
+
+This started off a simple test- to see if it was possible to serve files with python,
+now it is beginning to turn into a full webserver project- powered by Tea (the drink)
+and Flask.
+
+
+What do I need?
+--------------------
+
+You need Flask, and a port available. Plus python (2 or 3, tested on 2)
+
+
+Who made this?
+--------------------
+
+This was made by 17lwinn (protechuk@pm.me) and jarvis394, Jayden and roboticObsession
+
+
