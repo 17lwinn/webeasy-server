@@ -1,0 +1,112 @@
+Thanks for choosing ProTech EasyWeb server!
+
+--------------------------------------------
+
+part I, setting up:
+
+In order to use our software, you must have python (2 or 3) and pip. 
+
+Make sure you have flask installed, if not install by:
+
+---------------------------------------------
+pip install flask -g
+---------------------------------------------
+replace -g with --user or nothing if on glitch.com
+
+once you've done that, download the source at <add github URL here> and open
+your terminal enter the folder with the codeand with any editor go to 
+webserver_config.py.
+
+the regular config is:
+
+----------------------------------------------
+# host: the IP address the server will run on, will default to your IP if left
+# port: the port it will bind to, for glitch.com users we recommend using port 8000
+host = "0.0.0.0"
+port = "8000"
+------------------------------------------------
+
+then run the following:
+
+---------------------------------------------
+flask --version
+python3 main.py
+---------------------------------------------
+ 
+navigate to localhost (the url logged in your terminal), you should see a welcome
+screen on that URL.
+
+If not- go to https://gist.github.com/17lwinn/b8992d61b8b2eeb6d1e886bc220c0192 and 
+copy the code in welcome.html into templates/welcome.html. It should be like this:
+
+---------------------------------------------
+
+templates/
+    welcome.html
+    hello.html
+    .404.html
+    .service.html
+    
+    
+---------------------------------------------
+
+
+part II, configuring routes:
+
+If your going to run a simple site, you should at least consider some handy routes!
+
+Routes are easy to implement, go to webserver_config.py, navigate to 'routes'
+and try this:
+
+-----------------------------------------------
+
+@urls_blueprint.route('/hi')
+def index():
+  return render_template('welcome.html')
+
+------------------------------------------------
+
+Then run your server:
+
+-----------------------------------------------
+
+python main.py -c hello.html
+
+-----------------------------------------------
+
+Go to /hi, this should show the welcome screen you just linked. If it doesn't work,
+we recommend taking a look at 'flask blueprints'.
+
+A typical route would be like this:
+
+-----------------------------------------------
+
+@urls_blueprint.route('/routename')
+def index():
+  return render_template('filename.html') <------------ can be replaced by another function
+
+------------------------------------------------
+
+
+part III, command-line options:
+
+WebEasy comes with command-line arguments, allowing you to modify your server.
+
+
+-c/--customfile <file.html> = serves specific file, use this to serve a file besides
+                              the default 'welcome' screen.
+                              
+-v = prints message showing version.
+
+-h = views all commands
+
+
+--------------------------------------------------
+
+part IV, the service info page:
+
+WebEasy has a page built-in* which can be accessed by /service - which shows you
+helpful information for debugging.
+
+* At the moment only available on the 'welcome' page, which can be accessed by
+running the python script on it's own with no arguments (see part III)
