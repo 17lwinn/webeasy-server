@@ -1,4 +1,4 @@
-                       <center> # ProTech WebEasy Server </center>
+                    # ProTech WebEasy Server
                         
 What is it exactly?
 -------------------
