@@ -1,4 +1,4 @@
-                    # ProTech WebEasy Server
+                                               ProTech WebEasy Server
                         
 What is it exactly?
 -------------------
@@ -43,3 +43,7 @@ Copyrighted?
 -----------------------
 
 Yep, see the LICENSE. I'm not a lawyer but know a bit of the law.
+
+-------
+
+<small>[Text version](https://github.com/17lwinn/webeasy-server/blob/master/README)</small>
