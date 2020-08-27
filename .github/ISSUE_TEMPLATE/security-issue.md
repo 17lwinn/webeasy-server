@@ -2,7 +2,7 @@
 name: Security issue
 about: Report issues that could threaten security.
 title: 'Security issue: [PUT NAME HERE OF THREAT]'
-labels: ''
+labels: Security issue
 assignees: ''
 
 ---
