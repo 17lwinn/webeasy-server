@@ -7,8 +7,8 @@ assignees: ''
 
 ---
 
-**Type of threat (XSS, clickjacking etc.): **
+**Type of threat (XSS, clickjacking etc.):**
 
-**Software and python version: **
+**Software and python version:**
 
-**Location (code or site?): **
+**Location (code or site?):**
