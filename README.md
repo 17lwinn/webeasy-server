@@ -1,4 +1,4 @@
-                                               ProTech WebEasy Server
+                                     ProTech WebEasy Server
                         
 What is it exactly?
 -------------------
